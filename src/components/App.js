@@ -38,7 +38,7 @@ export default class App extends Component {
         country: "",
         humidity: "",
         description: "",
-        error: "",
+        error: "Please Enter Data",
       });
     }
   };
@@ -48,7 +48,13 @@ export default class App extends Component {
       <div className="App">
         <h1>Weather-App</h1>
         <Form getWeather={this.getWeather} />
-        <Weather />
+        <Weather
+          tempreature={this.state.tempreature}
+          city={this.state.city}
+          country={this.state.country}
+          humidity={this.state.humidity}
+          description={this.state.description}
+        />
       </div>
     );
   }
