@@ -54,6 +54,7 @@ export default class App extends Component {
           country={this.state.country}
           humidity={this.state.humidity}
           description={this.state.description}
+          error={this.state.error}
         />
       </div>
     );

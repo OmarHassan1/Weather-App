@@ -1,13 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Weather extends Component {
-  render() {
-    return (
-      <div>
-        <h2>Weather Component</h2>
-      </div>
-    );
-  }
-}
+const Weather = () => {
+  return (
+    <div>
+      <h2>Weather Component</h2>
+    </div>
+  );
+};
 
 export default Weather;
