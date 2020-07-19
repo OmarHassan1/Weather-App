@@ -22,7 +22,7 @@ export default class App extends Component {
       `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}`
     );
     const data = await api.json();
-    if (city & country) {
+    if (city && country) {
       this.setState({
         tempreature: data.main.temp,
         city: data.name,
